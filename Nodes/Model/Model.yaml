@@ -122,3 +122,13 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
+- Name: Variable2
+  Id: g=ccb07f519bb2bb1c863b0d6c3a2a3685
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=79512042aa355a0288e1bcdd98d18c0d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
