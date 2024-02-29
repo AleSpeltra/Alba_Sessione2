@@ -1,0 +1,7 @@
+Name: Roles
+Id: g=168315c4ba704e70bb13e35de715eb03
+Type: RolesCategoryFolder
+Children:
+- Name: Operatore
+  Id: g=3c553e4aba43a813a450d4fd450e8c2b
+  Type: ns=1;RoleType

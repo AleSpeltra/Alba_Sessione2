@@ -1,0 +1,95 @@
+Name: Alba_Sessione2
+Id: g=3bb13b46ecbcfd03a68de98ad3daceba
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=5128ca76195d8a7acd27f1b53497b7cb
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=505ce1576d210fe49521b2104d100ebb
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["it-IT","en-US","fr-FR"]
+  - Name: LocaleFallbackList
+    Id: g=fb22874cc5737e74c228cf8d08c2d1d3
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=d04888174c8f70f68019ac7c295f42bb
+  Type: PropertyGroup
+  Children:
+  - Name: DefaultUserFolder
+    Id: g=b45bad71a09a8f586b06e42f15ad713a
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Alba_Sessione2/Security/Users"
+    Children:
+    - Name: Kind
+      Id: g=6193d4cc0a0ba9d06f8526e5964e10a8
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Id: g=3943bb85dcd91e6f9793f75d887708b2
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
+    Value: 0
+- Name: PasswordPolicy
+  Id: g=b8d6a39e76b4abfe9d1c1ce31faebaa6
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=0b1c6c2291d3dccda99493093fc14164
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=556d731d26701dda744f92161a7b9b42
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=43f969c24a42c45218cac8b4aa52581c
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=895dd692ba4adb9d3b38cacec5dc1c66
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=b9e6418923ceb1a5a689a6b0b0dc2398
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Id: g=59f4ac7fe9ba5f633cd973b2dd414f97
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/Alba_Sessione2/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Id: g=93ff5eff5b00745a47982a15e3e02bdd
+    Type: PropertyType
+    DataType: NodeId
+    Value: "/Objects/Alba_Sessione2/Recipes/RecipeSchema1/EditModel"

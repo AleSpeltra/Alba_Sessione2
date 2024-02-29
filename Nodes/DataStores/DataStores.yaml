@@ -1,0 +1,122 @@
+Name: DataStores
+Id: g=c6f7a34d0bdf04f74f03b1d9ca8e3aa7
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=c64f21084faeaf66035d3e7d29f9d19b
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Id: g=f2ffd8790f84571f5114d50d69e54411
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeSchema1
+      Id: g=66d17572667331a246d2bab29ac73a0a
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=9;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=9;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=2821dc28d505fa3dbbb86a0e7c969bb3
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Id: g=8398849b8c13c53fa5748099312bb8fd
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /ModbusTag1
+          Id: g=1879ca8f8d96f5729cd6e9d42421a471
+          Type: StoreColumn
+          DataType: Boolean
+          Value: false
+        - Name: /ModbusTag2
+          Id: g=51819b059e1782dd02919f43a3f816bf
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
+        - Name: /ModbusTag3
+          Id: g=0621df41b23cb77a6bd1981440ba9b4b
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+  - Class: Reference
+    Target: ns=10;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=10;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Id: g=d5711a3876510c5ad37c3e752b3a6880
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=8cbad42204979aa78609e1ec532b811c
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=4870f1bdd3928cddbb1c13c884cec706
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=153df4de8eeea62a32055ec057d17853
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=9;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=9;i=59
+    Direction: Forward
+  - Name: Filename
+    Id: g=f084932ca5b3524db64c1bee9fd7a259
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pippo"

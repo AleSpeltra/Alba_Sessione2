@@ -1,0 +1,124 @@
+Name: Model
+Id: g=4c93191eed5e05b78a98c29d63ce5814
+Type: ModelCategoryFolder
+Children:
+- Name: GiornoChanged
+  Id: g=3c0830a2b09f695d6e1306d6434f52a8
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Id: g=3865399c05d4018963e3bd4a7229e9a0
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Giorno"
+  - Name: VariableValueChangedEventHandler1
+    Id: g=5b54210278780de902902cccc9aafad7
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=2d6339e2447f5c6e7a573394e65f0fe6
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
+    - Name: MethodsToCall
+      Id: g=fbc57f3917074d6ecf6ded6e96a35752
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Id: g=002b291e87490123488e4353e0329c52
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Id: g=6684ab175cfc934c0c88054c5944abda
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Id: g=c6b6a697544bb6ff6c7573862b780a87
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=2fe21274ef4615e54b593f23c0d39d42
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Loggers/DataLoggerExporter@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=8185bc978bfdf27b7f561ce3f6a0525b
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Id: g=d5b41f53ab7707485a14bfad6ed25363
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Export"
+    - Name: EventArguments
+      Id: g=d15930dc56f6c94a7b8939ab93a895ec
+      Type: VariableValueChangedEvent
+      Children:
+      - Name: VariableNodeId
+        Id: g=2bbdae27fdc8f49c7202ea0eaae34768
+        Type: BaseVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NewValue
+        Id: g=9607ca5e93a560be389fd48e6361ae7e
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Id: g=0c1bd51f85760344811fa3cb3ce89f89
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Id: g=1bdcd1154ac8e59041bbb3c3143a7c00
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Id: g=9e5196044a4709906e1a399c2b9c6fe5
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Id: g=800f53dac1599ac80510a502c0c3591c
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Id: g=d54c22adb75c83e63f54fccc1051e5ed
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Id: g=1968d6ac334c9665e2a631022fbabf2a
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Id: g=84740a16d11fd83deccc14e64e551f1b
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Id: g=dad7d6d7e5355f65940bc60654b94d1a
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Id: g=914f11058814800008d8f5b72c1d5cc0
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0
+- Name: TestoLabel
+  Id: g=e70293f6c62a4375a198d386e99e96bb
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":7,"TextId":"Pluto"}
+- Name: Variable1
+  Id: g=60870d1dacd96b4b85a8867a72590a0e
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

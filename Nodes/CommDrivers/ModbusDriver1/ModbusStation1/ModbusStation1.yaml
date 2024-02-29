@@ -1,0 +1,75 @@
+Name: ModbusStation1
+Id: g=284636d3cbf2cecc37384d8d7d381915
+Type: ModbusStation
+Children:
+- Name: MaximumJobSizeInBytes
+  Id: g=52349902ee8676cf665777453bd2c629
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 128
+- Name: MaximumGapInBytes
+  Id: g=4d7da54032c5cd5f517947a8a6cd7cde
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 4
+- Name: UnitIdentifier
+  Id: g=f17ae734b55b40be4ec34504fc26c49b
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: WriteMultipleCoils
+  Id: g=a47b1a6189b714ab7602b47d06b667de
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: WriteMultipleRegisters
+  Id: g=ae19f6c81be53f9c0dff90c4001903bd
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: IPAddress
+  Id: g=68e482566b686ddc60d50bed202da52d
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Localhost"
+- Name: Port
+  Id: g=f38be7783413d459ed89a2e75e4e9ee0
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 502
+- Name: Timeout
+  Id: g=f39157299f14a62643cddae3d54f8233
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:5.0000000"
+- Name: OperationCode
+  Id: g=c4a4a1556abd578ccd412ad722c9b13f
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+  Value: 0
+- Class: Reference
+  Target: ns=11;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=11;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=11;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=11;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=11;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=11;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Id: g=3822786d23ce1d26859cf90e80a52c60
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml

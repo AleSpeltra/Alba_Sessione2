@@ -1,0 +1,100 @@
+Name: LoginForm1
+Id: g=98f19e22354642e917a117cf1de77e04
+Type: FolderType
+Children:
+- Name: LoginForm
+  Id: g=d0fba00ff93f064d6e1cb546eea27209
+  Supertype: PanelLoader
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panel
+    Id: g=80b67389546c82da7c769b68903365e0
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=a927bf7221829683489d928654081257
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: ConditionalConverter1
+      Id: g=3de276c7ba2dfdaf830b8303d96d85e4
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Id: g=8cbd3dc5861853979492978e393a82e1
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Id: g=9012e76613ececeb1eb9284da34018e9
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}/LoggedIn"
+      - Name: TrueValue
+        Id: g=3d31fce3f6bc058ab7c40168b2c7e5e8
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "/Objects/Alba_Sessione2/UI/LoginForm1/LoginFormComponents/Logout"
+      - Name: FalseValue
+        Id: g=0852a88babac7f8b989f24cc1a3cfa01
+        Type: BaseDataVariableType
+        DataType: NodeId
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "/Objects/Alba_Sessione2/UI/LoginForm1/LoginFormComponents/Login"
+  - Name: CurrentPanel
+    Id: g=ad1bcee82ff798b34e5fa90561b8a549
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=824c962f9b448b04f2dab5e5782bbbe3
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Class: Reference
+    Target: ns=3;i=478
+  - Name: Width
+    Id: g=41298d70ab08f6c21ac9e611f395b893
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Id: g=62dd5aa6a0e37b1a1fae030fa34af79e
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Users
+    Id: g=f4218867f594cc66fdb75a69799afc8c
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=ac766e47056f9e611da1fbdfb80286a3
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: PanelAliasNode
+    Id: g=53e0b35d552e533679b7d582bda444d7
+    Type: BaseDataVariableType
+    DataType: NodeId
+    ValueRank: ScalarOrOneDimension
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: DynamicLink
+      Id: g=4ed7b870941c3634d68790dc5bae4af8
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Users@NodeId"
+- File: LoginFormComponents/LoginFormComponents.yaml

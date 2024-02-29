@@ -1,0 +1,118 @@
+Name: Translations
+Id: g=d85b4f69dc8d77ad86e160430922121a
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Id: g=e2ddc219282c0ed4cb6717a4db3ba9db
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [59,4],
+    "Body": [
+     "","en-US","it-IT","fr-FR",
+     "Save","Save","Salva","",
+     "Delete","Delete","Elimina","",
+     "RecipeControllerDeleted","deleted","eliminata","",
+     "RecipesEditorNotFound","not found","non trovato","",
+     "RecipesEditorNotSet","is not set","non è impostato","",
+     "Load","Load","Carica","",
+     "RecipeControllerSaved","saved","salvata","",
+     "RecipeControllerCreatedAndSaved","created and saved","creata e salvata","",
+     "Apply","Apply","Applica","",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","Il nome della ricetta è vuoto","",
+     "RecipeControllerRecipe","Recipe","Ricetta","",
+     "RecipeControllerRecipeApplied","Recipe applied","Ricetta applicata","",
+     "RecipeControllerRecipeLoaded","Recipe loaded","Ricetta caricata","",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","Variabile RecipeSchema non trovata","",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","RecipeSchema non impostato","",
+     "RecipesEditorRecipeNotFound","Recipe not found","Ricetta non trovata","",
+     "RecipesEditorNotARecipe","is not a recipe","non è una ricetta","",
+     "RecipesEditorStoreOfSchema","Store of schema","L'archivio dello schema","",
+     "RecipesEditorStore","Store","Archivio","",
+     "RecipesEditorNotAStore","is not a store","non è un archivio","",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","EditModel dello schema","",
+     "Password","Password","Password","",
+     "Login","Login","Login","",
+     "Old password","Old password","Vecchia password","",
+     "LoginChangePasswordFormUnsupportedOperation","Unsupported operation","Operazione non supportata","",
+     "New password","New password","Nuova password","",
+     "Confirm password","Confirm password","Conferma password","",
+     "Change password","Change password","Cambia password","",
+     "Current User:","Current User:","Utente corrente:","",
+     "Logout","Logout","Logout","",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.","Password scaduta.\nImmetterne una nuova.","",
+     "LoginFormLoginSuccessful","Login successful","Login riuscito","",
+     "LoginFormPasswordExpired","Password expired","Password scaduta","",
+     "LoginFormAuthenticationFailed","Authentication failed","Autenticazione fallita","",
+     "LoginChangePasswordFormWrongOldPassword","Wrong old password","Vecchia password errata","",
+     "LoginChangePasswordFormPasswordAlreadyUsed","Password already used","Password già utilizzata","",
+     "LoginChangePasswordFormPasswordChangedTooRecently","Password changed too recently","Password cambiata troppo recentemente","",
+     "LoginChangePasswordFormPasswordTooShort","Password too short","Password troppo corta","",
+     "LoginChangePasswordFormPasswordsDoNotMatch","Passwords do not match","Le password non coincidono","",
+     "LoginChangePasswordFormUserNotFound","User not found","Utente non trovato","",
+     "EmptyUserList","No users in list","Nessun utente nell'elenco","",
+     "Name","Name","Nome","",
+     "Groups","Groups","Gruppi","",
+     "Create","Create","Crea","",
+     "Cancel","Cancel","Annulla","",
+     "Locale:","Locale:","Impostazioni locali:","",
+     "PasswordChangedTooRecently","Password changed too recently","Password cambiata troppo recentemente","",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username","Impossibile creare un utente con nome utente vuoto","",
+     "UnableToGetUsers","Unable to get users","Impossibile ottenere gli utenti","",
+     "UserNotFound","User not found","Utente non trovato","",
+     "PasswordAlreadyUsed","Password already used in the past","Password già utilizzata in passato","",
+     "PasswordTooShort","Password too short","Password troppo corta","",
+     "UnsupportedOperation","Unsupported operation","Operazione non supportata","",
+     "ChangesAppliedSuccessfully","Changes applied successfully","Modifiche applicate correttamente","",
+     "UsernameAlreadyExists","Username already exists","Nome utente già esistente","",
+     "HOME","Home","Casa","",
+     "Pluto","","Pippo","",
+     "Lavoro","Work","Lavoro",""
+    ]
+   }
+- Name: ImportAndExportTranslations
+  Id: g=3f6073a2b30e55ec0949f92bcb081b68
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=8a109ae186579e52242f3723b7d0d188
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Id: g=1260306c95dce2ee84e56870d0234c5c
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Users/ASPELTRA/OneDrive - Rockwell Automation, Inc/Desktop/Alba_Sessione2/ProjectFiles/exportTesto.csv"
+  - Class: Method
+    Name: ExportTranslations
+    Id: g=a2057335315ce496dd2d9c8247c603d3
+  - Class: Method
+    Name: ImportTranslations
+    Id: g=fcae985e85b81e762121e83647521697
+  - Name: CharacterSeparator
+    Id: g=39a585132fafdc5539297c93d595eec9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Id: g=550854037f7f7b20c8bfdebabe72806d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LocalizationDictionary
+    Id: g=d2c122b67342b666bbfc635964520ad9
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Alba_Sessione2/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Id: g=ce37ba8b391972a92a868bc9ff11a312
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"

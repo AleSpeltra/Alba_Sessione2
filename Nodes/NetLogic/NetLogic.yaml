@@ -1,0 +1,93 @@
+Name: NetLogic
+Id: g=4d4506f56c2ead70b9db5e5d0d268540
+Type: NetLogicCategoryFolder
+Children:
+- Name: ClockLogic
+  Id: g=9871905fbd18e08fe1f2007398e224cf
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Id: g=f424b6099b79b00ad4df4ea1bef6b25f
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: Year
+      Id: g=fc0218f8aea3a6bcbca2738661ff7170
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Month
+      Id: g=381649f601b44cda104fce0ccb083c4e
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Day
+      Id: g=ceb943fc52c597db648dfb1a01de857c
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: DynamicLink
+        Id: g=20721ad547a002dc57028432ba9027e9
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Giorno"
+        Children:
+        - Name: Mode
+          Id: g=ca32c77d0dfe1558d71337324718a162
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Hour
+      Id: g=8c81fce24a24f10447d910c5a549d05b
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Minute
+      Id: g=c9b4f081a00b10f771e0754cb9a3e24b
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Second
+      Id: g=4e3994b16a1cc3266967e7702d109b1b
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Name: UTCTime
+    Id: g=b4b820892df4ae0d492cf7033ce50ac6
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: Year
+      Id: g=baf7aa5ef292bc3daa9f0124d89e9c98
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Month
+      Id: g=3cf202b29e0860dc39049e76e54d53f6
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Day
+      Id: g=d5505b92857fe530556be18d83e7063a
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Hour
+      Id: g=50eac8c0a8fb7694a9e494b42ed9a800
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Minute
+      Id: g=87ceced35c1621f9e61767680a9e2ca8
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Second
+      Id: g=e627d89be15118be780a52025bf1a8cf
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

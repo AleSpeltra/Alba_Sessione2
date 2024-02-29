@@ -1,0 +1,104 @@
+Name: Recipes
+Id: g=395e948352c4785d6fd88c3b8493b4fa
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=be6bae3f96e0d86afea1bb467d4682f6
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=80bfd2ca9d785a19454542409a3d2b4b
+    Type: BaseObjectType
+    Children:
+    - Name: ModbusTag1
+      Id: g=f74598f7661f7ecb703912a1191199af
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ModbusTag2
+      Id: g=52253c257a0746f874d39ffe981facc3
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 0
+    - Name: ModbusTag3
+      Id: g=c49696832259b2135035affa5507e9ab
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=25;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=a5834117507740e19c4565768f83dadb
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Alba_Sessione2/DataStores/EmbeddedDatabase1"
+    Children:
+    - Name: Kind
+      Id: g=21b98e13fc723c86fb5ffb04c87561cc
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Id: g=d2583ef761907b8bd28d06bcac14cd58
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Alba_Sessione2/CommDrivers/ModbusDriver1/ModbusStation1/Tags"
+    Children:
+    - Name: Kind
+      Id: g=b8413697fa9807e5324368698c27852b
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=f5f40a72fe85ed9e666d907eb1ef04f2
+    Type: BaseObjectType
+    Children:
+    - Name: ModbusTag1
+      Id: g=d5440d43275b26d63b081e28eb1e27ff
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ModbusTag2
+      Id: g=300466c196c3e0f2a42d2b53efbf1409
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 0
+    - Name: ModbusTag3
+      Id: g=b1741de1e59681f97bba13fe7387e37e
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

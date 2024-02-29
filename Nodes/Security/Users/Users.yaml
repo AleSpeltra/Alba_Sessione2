@@ -1,0 +1,114 @@
+Name: Users
+Id: g=8cdfe95c558e909385d4fe7ddc9a2655
+Type: UsersCategoryFolder
+Children:
+- Name: Admin
+  Id: g=83a85008f214356aa5b66637d7985d54
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=e5ac92b0f481d9b27003a09750e4dfe3
+  - Name: Password
+    Id: g=678804cf7d99c9f1fc8739144a64ae9d
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=3d57b7109b678cc14dd5c871b0fa7c50
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [223,177,120,104,57,198,120,185,172,232,191,22,4,14,86,175,104,203,243,121,136,23,137,27,91,56,201,118,45,167,163,189],
+         "Salt": [116,177,62,50,152,177,111,255,16,66,220,249,230,26,186,168,9,243,38,61,159,118,124,107,37,170,74,119,45,28,66,38]
+        }
+       }
+    - Name: ChangeTimestamp
+      Id: g=1e8cf0915f39e3e23c0a0cddc195a6f6
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2024-02-29T11:14:50.7210113"
+    - Name: History
+      Id: g=a6a62300d8fa32a0bdf6292a2e3b560c
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[223,177,120,104,57,198,120,185,172,232,191,22,4,14,86,175,104,203,243,121,136,23,137,27,91,56,201,118,45,167,163,189],"Salt":[116,177,62,50,152,177,111,255,16,66,220,249,230,26,186,168,9,243,38,61,159,118,124,107,37,170,74,119,45,28,66,38]}}]
+  - Name: Variable1
+    Id: g=1ccec6a079572bb26eed926dde0cd51c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Prova1234"
+- Name: User2
+  Id: g=636fc90b6061274a90075897818c7681
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=9e4977573d082b1c639aa92ec1c03147
+  - Class: Reference
+    Type: HasRole
+    Target: g=3c553e4aba43a813a450d4fd450e8c2b
+- Name: Developer
+  Id: g=cfe7bf6ebc7f0c14772b88350f67f592
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=9e4977573d082b1c639aa92ec1c03147
+  - Class: Reference
+    Type: HasRole
+    Target: g=3c553e4aba43a813a450d4fd450e8c2b
+- Name: UtenteBase
+  Id: g=c4f1a9cf6bb6e3fde4da0f1e50ae58c3
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ca3d521c128c1e66b4d6e714a6773875
+- Name: Corso
+  Id: g=7f5991df38dae3c8a8067f2607d26a70
+  Supertype: UserType
+  Children:
+  - Name: Livello
+    Id: g=41514f8791f503cb057f64b1158ecb7c
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: Corso1
+  Id: g=981f74759c29d61d4084888645c7a455
+  Type: Corso
+  Children:
+  - Name: Livello
+    Id: g=09a0245225cdb95e4d7ed01fda9d4dc5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ca3d521c128c1e66b4d6e714a6773875
+- Name: Corso2
+  Id: g=208cf0dccdc071b021427d15916e38e7
+  Type: Corso
+  Children:
+  - Name: Livello
+    Id: g=73861aed6b32f3b94e6932668efffb98
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Class: Reference
+    Type: HasGroup
+    Target: g=ca3d521c128c1e66b4d6e714a6773875
