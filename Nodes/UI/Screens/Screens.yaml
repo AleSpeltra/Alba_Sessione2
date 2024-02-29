@@ -8856,7 +8856,3 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 220.0
-- Name: Screen1
-  Id: g=c5d241ecf2749296dd8e34e895f6e230
-  Supertype: Screen
-  ReferenceType: HasComponent
