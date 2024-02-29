@@ -40,6 +40,16 @@ Children:
     Type: BaseDataVariableType
     DataType: AuthenticationMode
     Value: 0
+  - Name: CACertificateFile
+    Id: g=4f6788ceb19595be7f26ee728928c9d3
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: DefaultDomainName
+    Id: g=709fe05feb26778eea4072ec1f312e54
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
 - Name: PasswordPolicy
   Id: g=b8d6a39e76b4abfe9d1c1ce31faebaa6
   Type: PasswordPolicy
